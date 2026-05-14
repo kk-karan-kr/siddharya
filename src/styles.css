@@ -90,8 +90,8 @@
   --ring: oklch(0.72 0.10 78);
 
   /* Brand extras */
-  --gold: oklch(0.72 0.10 78);               /* #b8924a-ish */
-  --gold-foreground: oklch(0.22 0.03 150);
+  --gold: oklch(0.585 0.115 68);             /* brand gold #B47E22 */
+  --gold-foreground: oklch(0.98 0.01 85);
   --sage: oklch(0.72 0.04 145);              /* sage green */
   --sand: oklch(0.88 0.04 80);               /* warm sand */
   --river: oklch(0.66 0.04 220);             /* river blue */
