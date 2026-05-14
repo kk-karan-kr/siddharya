@@ -79,7 +79,7 @@
   --muted: oklch(0.95 0.012 85);
   --muted-foreground: oklch(0.46 0.025 150);
 
-  --accent: oklch(0.72 0.10 78);             /* gold accent */
+  --accent: oklch(0.585 0.115 68);           /* brand gold #B47E22 */
   --accent-foreground: oklch(0.22 0.03 150);
 
   --destructive: oklch(0.55 0.20 27);
