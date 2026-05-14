@@ -62,9 +62,9 @@ export function Footer() {
             </form>
 
             <ul className="mt-7 space-y-2.5 text-sm text-cream/70">
-              <li className="flex items-center gap-3"><MapPin className="size-4 text-gold" /> Tapovan, Rishikesh, Uttarakhand 249192</li>
-              <li className="flex items-center gap-3"><Phone className="size-4 text-gold" /> +91 99999 99999</li>
-              <li className="flex items-center gap-3"><Mail className="size-4 text-gold" /> hello@siddharya.com</li>
+              <li className="flex items-center gap-3"><MapPin className="size-4 text-gold" /><span>Tapovan, Rishikesh, Uttarakhand 249192</span></li>
+              <li className="flex items-center gap-3"><Phone className="size-4 text-gold" /><span>+91 99999 99999</span></li>
+              <li className="flex items-center gap-3"><Mail className="size-4 text-gold" /><span>hello@siddharya.com</span></li>
             </ul>
           </div>
         </div>
