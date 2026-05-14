@@ -35,10 +35,10 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <img src={logo} alt="Siddharya Retreats logo" className="h-11 w-11 rounded-full object-cover ring-1 ring-border" />
+          <img src={logo} alt="Siddharya Retreats logo" className="h-11 w-11 rounded-full object-cover ring-1 ring-cream/30" />
           <div className="leading-tight">
-            <div className="font-serif text-xl text-primary">Siddharya</div>
-            <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">Retreats &amp; Wellness</div>
+            <div className={cn("font-serif text-xl transition-colors", scrolled ? "text-primary" : "text-cream")}>Siddharya</div>
+            <div className={cn("text-[10px] tracking-[0.25em] uppercase transition-colors", scrolled ? "text-muted-foreground" : "text-cream/75")}>Retreats &amp; Wellness</div>
           </div>
         </a>
 
@@ -47,7 +47,10 @@ export function Header() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-foreground/75 hover:text-primary transition-colors relative group"
+              className={cn(
+                "text-sm transition-colors relative group",
+                scrolled ? "text-foreground/75 hover:text-primary" : "text-cream/90 hover:text-cream",
+              )}
             >
               {l.label}
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
@@ -56,12 +59,12 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button asChild className="bg-primary hover:bg-primary/90 rounded-full px-6 h-10">
+          <Button asChild className={cn("rounded-full px-6 h-10", scrolled ? "bg-primary hover:bg-primary/90" : "bg-gold text-gold-foreground hover:bg-gold/90")}>
             <a href="#book">Book Retreat</a>
           </Button>
         </div>
 
-        <button className="lg:hidden text-primary" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button className={cn(scrolled ? "text-primary" : "text-cream", "lg:hidden")} onClick={() => setOpen(!open)} aria-label="Menu">
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
       </div>
