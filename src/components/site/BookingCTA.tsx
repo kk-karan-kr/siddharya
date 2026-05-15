@@ -15,12 +15,12 @@ export function BookingCTA() {
           <span className="italic text-gold">Are you?</span>
         </h2>
         <p className="mt-6 text-lg text-cream/80 max-w-xl mx-auto">
-          Limited cohorts each season. Reserve your space now or speak with our retreat team — we
+          Limited cohorts each season. Reserve your space now or speak with our retreat team - we
           reply within 24 hours.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Button asChild size="lg" className="rounded-full h-12 px-8 bg-gold text-gold-foreground hover:bg-gold/90">
-            <a href="mailto:hello@siddharya.com">
+            <a href="mailto:sales@siddharyawellness.com">
               Reserve a retreat <ArrowRight className="ml-1" />
             </a>
           </Button>

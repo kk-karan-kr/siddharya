@@ -4,7 +4,6 @@ import { Hero } from "@/components/site/Hero";
 import { AboutRishikesh } from "@/components/site/AboutRishikesh";
 import { ProgramCards } from "@/components/site/ProgramCards";
 import { WhyChooseUs } from "@/components/site/WhyChooseUs";
-import { DailyTimeline } from "@/components/site/DailyTimeline";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Accommodation } from "@/components/site/Accommodation";
 import { NearbyAttractions } from "@/components/site/NearbyAttractions";
@@ -26,7 +25,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Siddharya Retreats & Wellness — Yoga in Rishikesh" },
       {
         property: "og:description",
-        content: "Boutique Himalayan yoga & wellness sanctuary on the banks of the Ganga.",
+        content: "Boutique Himalayan yoga & wellness retreat on the banks of the Ganga.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -43,7 +42,6 @@ function Index() {
         <AboutRishikesh />
         <ProgramCards />
         <WhyChooseUs />
-        <DailyTimeline />
         <Testimonials />
         <Accommodation />
         <NearbyAttractions />

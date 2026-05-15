@@ -12,7 +12,7 @@ import beach from "@/assets/beach-meditation.jpg";
 const tiles = [
   { src: rooftop, alt: "Rooftop yoga deck with Himalayan views", span: "lg:col-span-2 lg:row-span-2" },
   { src: beach, alt: "Riverside meditation on the Ganga", span: "" },
-  { src: cafe, alt: "Floral garden café at the retreat", span: "" },
+  { src: cafe, alt: "Floral garden cafe at the retreat", span: "" },
   { src: yogaTree, alt: "Tree pose practice", span: "" },
   { src: yogaHall, alt: "Yoga shala interior", span: "lg:col-span-2" },
   { src: meditation, alt: "Meditation by the river", span: "" },
@@ -28,12 +28,12 @@ export function Gallery() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14">
           <div>
-            <span className="text-xs tracking-[0.3em] uppercase text-gold">Inside the Sanctuary</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-gold">Inside the Retreat</span>
             <h2 className="mt-4 font-serif text-4xl lg:text-5xl text-primary leading-[1.1] text-balance">
               An immersive glimpse.
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-sm">A few moments captured — the river, the practice, the people.</p>
+          <p className="text-muted-foreground max-w-sm">A few moments captured - the river, the practice, the people.</p>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 auto-rows-[180px] lg:auto-rows-[230px] gap-3 lg:gap-4">

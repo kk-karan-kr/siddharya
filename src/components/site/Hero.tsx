@@ -1,4 +1,4 @@
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/yoga-river.jpg";
 
@@ -17,7 +17,7 @@ export function Hero() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-px w-10 bg-gold" />
-            <span className="text-xs tracking-[0.3em] uppercase text-gold">Tapovan · Rishikesh · India</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-gold">Tapovan, Rishikesh, India</span>
           </div>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] leading-[1.02] text-balance text-cream">
             Awaken within.<br />
@@ -25,7 +25,7 @@ export function Hero() {
             Transform forever.
           </h1>
           <p className="mt-8 text-lg text-cream/85 max-w-xl text-pretty leading-relaxed">
-            A boutique yoga &amp; wellness sanctuary on the banks of the Ganga — where ancient
+            A boutique yoga &amp; wellness retreat on the banks of the Ganga - where ancient
             Himalayan practice meets refined contemporary care.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
@@ -35,29 +35,6 @@ export function Hero() {
                 <ArrowRight className="ml-1" />
               </a>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="rounded-full h-12 px-7 bg-transparent border-cream/40 text-cream hover:bg-cream/10 hover:text-cream"
-            >
-              <a href="#programs">
-                <Play className="mr-1" /> Explore programs
-              </a>
-            </Button>
-          </div>
-
-          <div className="mt-16 grid grid-cols-3 gap-8 max-w-xl border-t border-cream/20 pt-8">
-            {[
-              { k: "1,200+", v: "Guests welcomed" },
-              { k: "30+", v: "Countries" },
-              { k: "200hr", v: "RYT Certified" },
-            ].map((s) => (
-              <div key={s.v}>
-                <div className="font-serif text-3xl text-cream">{s.k}</div>
-                <div className="text-xs uppercase tracking-widest text-cream/65 mt-1">{s.v}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ export function Accommodation() {
             </h2>
             <p className="mt-6 text-foreground/70 leading-relaxed text-lg">
               Each of our 16 boutique rooms is finished in warm woods, soft linens and natural stone
-              — a calm contrast to the energy of the practice. Three sattvic meals each day are
+              - a calm contrast to the energy of the practice. Three sattvic meals each day are
               prepared by our in-house ayurvedic chef from organic Himalayan produce.
             </p>
 
@@ -43,18 +43,6 @@ export function Accommodation() {
                   <div className="text-xs mt-2 text-foreground/75">{a.label}</div>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-10 p-6 rounded-2xl bg-secondary/60 border border-border">
-              <div className="flex items-baseline justify-between gap-4">
-                <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Full board, all-inclusive</div>
-                  <div className="font-serif text-3xl text-primary mt-1">From $128 <span className="text-base text-muted-foreground">/ night</span></div>
-                </div>
-                <a href="#book" className="text-sm text-gold hover:text-primary transition underline-offset-4 hover:underline">
-                  See room types →
-                </a>
-              </div>
             </div>
           </div>
         </div>

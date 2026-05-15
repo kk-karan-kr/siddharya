@@ -1,10 +1,9 @@
 import { ArrowUpRight, Flower2, Music2, Snowflake, Palette, Mountain } from "lucide-react";
-import yogaTree from "@/assets/yoga-tree.jpg";
 import meditation from "@/assets/meditation-ganga.jpg";
-import yogaHall from "@/assets/yoga-hall.jpg";
-import yogaRiver from "@/assets/yoga-river.jpg";
+import rishikeshRiver from "@/assets/rishikesh-river.jpg";
 import beachMeditation from "@/assets/beach-meditation.jpg";
 import rooftop from "@/assets/rooftop-yoga.jpg";
+import cafe from "@/assets/cafe-floral.jpg";
 
 const programs = [
   {
@@ -17,7 +16,7 @@ const programs = [
   {
     icon: Music2,
     title: "Sound Healing",
-    duration: "Tibetan bowls · gongs",
+    duration: "Tibetan bowls and gongs",
     img: meditation,
     description: "Deep restorative sessions with crystal singing bowls, gongs and mantra to release stress and reset the nervous system.",
   },
@@ -25,29 +24,29 @@ const programs = [
     icon: Snowflake,
     title: "Ice Bath & Breathwork",
     duration: "Wim Hof inspired",
-    img: yogaRiver,
-    description: "Guided cold-plunge and conscious breathing rituals beside the Ganga — build resilience, energy and clarity.",
+    img: rishikeshRiver,
+    description: "Guided cold-plunge and conscious breathing rituals beside the Ganga to build resilience, energy and clarity.",
   },
   {
     icon: Palette,
     title: "Rock Painting & Art",
     duration: "Creative riverside ritual",
-    img: yogaTree,
-    description: "Slow afternoons by the river painting Himalayan stones — a meditative practice in mindfulness and presence.",
+    img: beachMeditation,
+    description: "Slow afternoons by the river painting Himalayan stones - a meditative practice in mindfulness and presence.",
   },
   {
     icon: Mountain,
     title: "Himalayan Excursions",
-    duration: "Half & full day",
-    img: beachMeditation,
+    duration: "Half and full day",
+    img: rishikeshRiver,
     description: "Guided walks to hidden beaches, forest trails, waterfalls and cliffside viewpoints curated by our local team.",
   },
   {
     icon: Flower2,
     title: "Sattvic Cuisine & Tea",
     duration: "Three meals daily",
-    img: yogaHall,
-    description: "Seasonal ayurvedic plates, herbal infusions and Himalayan honey — nourishment as part of the practice.",
+    img: cafe,
+    description: "Seasonal ayurvedic plates, herbal infusions and Himalayan honey - nourishment as part of the practice.",
   },
 ];
 
@@ -63,7 +62,7 @@ export function ProgramCards() {
             </h2>
           </div>
           <p className="text-muted-foreground max-w-md">
-            Siddharya is a pure retreat — no certifications, no teacher training. Just soulful daily
+            Siddharya is a pure retreat - no certifications, no teacher training. Just soulful daily
             experiences crafted to slow you down and bring you home to yourself.
           </p>
         </div>
