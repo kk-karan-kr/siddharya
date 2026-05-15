@@ -30,12 +30,12 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <div className="text-xs uppercase tracking-widest text-gold mb-5">Retreats</div>
+            <div className="text-xs uppercase tracking-widest text-gold mb-5">Experiences</div>
             <ul className="space-y-3 text-cream/75">
-              <li><a href="#programs" className="hover:text-gold">Yoga</a></li>
-              <li><a href="#programs" className="hover:text-gold">Meditation</a></li>
-              <li><a href="#programs" className="hover:text-gold">Ayurveda</a></li>
-              <li><a href="#programs" className="hover:text-gold">Teacher Training</a></li>
+              <li><a href="#programs" className="hover:text-gold">Yoga & Meditation</a></li>
+              <li><a href="#programs" className="hover:text-gold">Sound Healing</a></li>
+              <li><a href="#programs" className="hover:text-gold">Ice Bath</a></li>
+              <li><a href="#programs" className="hover:text-gold">Excursions</a></li>
             </ul>
           </div>
 
@@ -43,6 +43,7 @@ export function Footer() {
             <div className="text-xs uppercase tracking-widest text-gold mb-5">Explore</div>
             <ul className="space-y-3 text-cream/75">
               <li><a href="#about" className="hover:text-gold">About Rishikesh</a></li>
+              <li><a href="#nearby" className="hover:text-gold">Nearby Places</a></li>
               <li><a href="#stay" className="hover:text-gold">Accommodation</a></li>
               <li><a href="#gallery" className="hover:text-gold">Gallery</a></li>
               <li><a href="#faq" className="hover:text-gold">FAQ</a></li>
