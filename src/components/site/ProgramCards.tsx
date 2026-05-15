@@ -1,8 +1,9 @@
 import { ArrowUpRight, Flower2, Music2, Snowflake, Palette, Mountain } from "lucide-react";
-import meditation from "@/assets/meditation-ganga.jpg";
-import rishikeshRiver from "@/assets/rishikesh-river.jpg";
-import beachMeditation from "@/assets/beach-meditation.jpg";
-import rooftop from "@/assets/rooftop-yoga.jpg";
+import meditation from "@/assets/soundhealing.jpeg";
+import icebath from "@/assets/DSC03777.jpg";
+import rishikeshRiver from "@/assets/excurtion.avif";
+import beachMeditation from "@/assets/rock-painting.avif";
+import rooftop from "@/assets/yogaandmeditation.jpeg";
 import cafe from "@/assets/cafe-floral.jpg";
 
 const programs = [
@@ -24,7 +25,7 @@ const programs = [
     icon: Snowflake,
     title: "Ice Bath & Breathwork",
     duration: "Wim Hof inspired",
-    img: rishikeshRiver,
+    img: icebath,
     description: "Guided cold-plunge and conscious breathing rituals beside the Ganga to build resilience, energy and clarity.",
   },
   {

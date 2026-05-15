@@ -37,7 +37,7 @@ export function Footer() {
               {socials.map((social) => (
                 <a
                   key={social.label}
-                  href={social.href}
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   aria-label={social.label}
@@ -74,7 +74,7 @@ export function Footer() {
             <ul className="mt-7 space-y-2.5 text-sm text-cream/70">
               <li className="flex items-center gap-3"><MapPin className="size-4 text-gold" /><span>Tapovan, Rishikesh, Uttarakhand 249192</span></li>
               <li className="flex items-center gap-3"><Phone className="size-4 text-gold" /><span>+91 99999 99999</span></li>
-              <li className="flex items-center gap-3"><Mail className="size-4 text-gold" /><a href="mailto:sales@siddharyawellness.com" className="hover:text-gold">sales@siddharyawellness.com</a></li>
+              <li className="flex items-center gap-3"><Mail className="size-4 text-gold" /><a href="#" className="hover:text-gold">sales@siddharyawellness.com</a></li>
             </ul>
           </div>
         </div>

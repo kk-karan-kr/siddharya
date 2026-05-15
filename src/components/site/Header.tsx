@@ -1,10 +1,21 @@
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import { cn } from "@/lib/utils";
 
+const links = [
+  { href: "#", label: "About" },
+  { href: "#", label: "Programs" },
+  { href: "#", label: "Daily Life" },
+  { href: "#", label: "Stay" },
+  { href: "#", label: "Gallery" },
+  { href: "#", label: "FAQ" },
+];
+
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -23,27 +34,53 @@ export function Header() {
       )}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-3">
-          <img
-            src={logo}
-            alt="Siddharya Retreats logo"
-            className={cn(
-              "h-16 w-16 rounded-full object-cover shadow-lg transition-all",
-              scrolled ? "ring-2 ring-gold/50" : "ring-2 ring-cream/70",
-            )}
-          />
+        <a href="#" className="flex items-center gap-3">
+          <img src={logo} alt="Siddharya Retreats logo" className="h-20 w-20 rounded-full object-cover ring-1 ring-cream/30" />
           <div className="leading-tight">
-            <div className={cn("font-serif text-2xl transition-colors", scrolled ? "text-primary" : "text-cream")}>Siddharya</div>
+            <div className={cn("font-serif text-xl transition-colors", scrolled ? "text-primary" : "text-cream")}>Siddharya</div>
             <div className={cn("text-[10px] tracking-[0.25em] uppercase transition-colors", scrolled ? "text-muted-foreground" : "text-cream/75")}>Retreats &amp; Wellness</div>
           </div>
         </a>
 
-        <div>
+        <nav className="hidden lg:flex items-center gap-9">
+          {links.map((l) => (
+            <a
+              key={l.href}
+              href="#"
+              className={cn(
+                "text-sm transition-colors relative group",
+                scrolled ? "text-foreground/75 hover:text-primary" : "text-cream/90 hover:text-cream",
+              )}
+            >
+              {l.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
+            </a>
+          ))}
+        </nav>
+
+        <div className="hidden lg:block">
           <Button asChild className={cn("rounded-full px-6 h-10", scrolled ? "bg-primary hover:bg-primary/90" : "bg-gold text-gold-foreground hover:bg-gold/90")}>
-            <a href="#book">Book Retreat</a>
+            <a href="#">Book Retreat</a>
           </Button>
         </div>
+
+        <button className={cn(scrolled ? "text-primary" : "text-cream", "lg:hidden")} onClick={() => setOpen(!open)} aria-label="Menu">
+          {open ? <X className="size-6" /> : <Menu className="size-6" />}
+        </button>
       </div>
+
+      {open && (
+        <div className="lg:hidden bg-background border-t border-border mt-3">
+          <div className="px-6 py-6 flex flex-col gap-5">
+            {links.map((l) => (
+              <a key={l.href} href="#" onClick={() => setOpen(false)} className="text-base text-foreground/80">
+                {l.label}
+              </a>
+            ))}
+            <Button asChild className="rounded-full mt-2"><a href="#" onClick={() => setOpen(false)}>Book Retreat</a></Button>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

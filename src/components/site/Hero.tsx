@@ -30,7 +30,7 @@ export function Hero() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-full h-12 px-7 bg-gold hover:bg-gold/90 text-gold-foreground">
-              <a href="#book">
+              <a href="#">
                 Reserve your retreat
                 <ArrowRight className="ml-1" />
               </a>
