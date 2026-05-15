@@ -5,13 +5,19 @@ import river from "@/assets/rishikesh-river.jpg";
 import meditation from "@/assets/meditation-ganga.jpg";
 import room1 from "@/assets/room-1.jpg";
 import room2 from "@/assets/room-2.jpg";
+import cafe from "@/assets/cafe-floral.jpg";
+import rooftop from "@/assets/rooftop-yoga.jpg";
+import beach from "@/assets/beach-meditation.jpg";
 
 const tiles = [
-  { src: yogaRiver, alt: "Yoga on the Ganga", span: "lg:col-span-2 lg:row-span-2" },
-  { src: meditation, alt: "Meditation by the river", span: "" },
-  { src: river, alt: "Rishikesh skyline", span: "" },
+  { src: rooftop, alt: "Rooftop yoga deck with Himalayan views", span: "lg:col-span-2 lg:row-span-2" },
+  { src: beach, alt: "Riverside meditation on the Ganga", span: "" },
+  { src: cafe, alt: "Floral garden café at the retreat", span: "" },
   { src: yogaTree, alt: "Tree pose practice", span: "" },
   { src: yogaHall, alt: "Yoga shala interior", span: "lg:col-span-2" },
+  { src: meditation, alt: "Meditation by the river", span: "" },
+  { src: yogaRiver, alt: "Yoga on the Ganga", span: "" },
+  { src: river, alt: "Rishikesh skyline", span: "" },
   { src: room1, alt: "Boutique guest room", span: "" },
   { src: room2, alt: "Suite with valley view", span: "" },
 ];

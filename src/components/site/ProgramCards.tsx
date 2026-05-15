@@ -1,41 +1,53 @@
-import { ArrowUpRight, Flower2, Sparkles, HeartPulse, GraduationCap } from "lucide-react";
+import { ArrowUpRight, Flower2, Music2, Snowflake, Palette, Mountain } from "lucide-react";
 import yogaTree from "@/assets/yoga-tree.jpg";
 import meditation from "@/assets/meditation-ganga.jpg";
 import yogaHall from "@/assets/yoga-hall.jpg";
 import yogaRiver from "@/assets/yoga-river.jpg";
+import beachMeditation from "@/assets/beach-meditation.jpg";
+import rooftop from "@/assets/rooftop-yoga.jpg";
 
 const programs = [
   {
     icon: Flower2,
-    title: "Hatha & Vinyasa Yoga",
-    duration: "3 – 14 nights",
-    price: "from $480",
-    img: yogaTree,
-    description: "Daily asana, pranayama and traditional Hatha practice taught by senior Indian masters.",
+    title: "Yoga & Meditation",
+    duration: "Daily sessions",
+    img: rooftop,
+    description: "Sunrise hatha and sunset vinyasa on our open-air rooftop shala, framed by the Himalayas and Ganga valley.",
   },
   {
-    icon: Sparkles,
-    title: "Meditation & Silence",
-    duration: "5 – 10 nights",
-    price: "from $620",
+    icon: Music2,
+    title: "Sound Healing",
+    duration: "Tibetan bowls · gongs",
     img: meditation,
-    description: "Vedic meditation, mantra and noble silence by the Ganga to restore deep inner clarity.",
+    description: "Deep restorative sessions with crystal singing bowls, gongs and mantra to release stress and reset the nervous system.",
   },
   {
-    icon: HeartPulse,
-    title: "Ayurvedic Wellness",
-    duration: "7 – 21 nights",
-    price: "from $980",
+    icon: Snowflake,
+    title: "Ice Bath & Breathwork",
+    duration: "Wim Hof inspired",
     img: yogaRiver,
-    description: "Personalised dosha consultation, panchakarma, abhyanga and sattvic cuisine.",
+    description: "Guided cold-plunge and conscious breathing rituals beside the Ganga — build resilience, energy and clarity.",
   },
   {
-    icon: GraduationCap,
-    title: "200hr Teacher Training",
-    duration: "28 nights",
-    price: "from $1,890",
+    icon: Palette,
+    title: "Rock Painting & Art",
+    duration: "Creative riverside ritual",
+    img: yogaTree,
+    description: "Slow afternoons by the river painting Himalayan stones — a meditative practice in mindfulness and presence.",
+  },
+  {
+    icon: Mountain,
+    title: "Himalayan Excursions",
+    duration: "Half & full day",
+    img: beachMeditation,
+    description: "Guided walks to hidden beaches, forest trails, waterfalls and cliffside viewpoints curated by our local team.",
+  },
+  {
+    icon: Flower2,
+    title: "Sattvic Cuisine & Tea",
+    duration: "Three meals daily",
     img: yogaHall,
-    description: "Yoga Alliance certified intensive — anatomy, philosophy, methodology and practicum.",
+    description: "Seasonal ayurvedic plates, herbal infusions and Himalayan honey — nourishment as part of the practice.",
   },
 ];
 
@@ -45,41 +57,38 @@ export function ProgramCards() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <div className="max-w-2xl">
-            <span className="text-xs tracking-[0.3em] uppercase text-gold">Our Programs</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-gold">Retreat Experiences</span>
             <h2 className="mt-4 font-serif text-4xl lg:text-5xl text-primary leading-[1.1] text-balance">
-              Four paths.<br className="hidden sm:block" /> One inward journey.
+              Curated rituals.<br className="hidden sm:block" /> Designed to restore you.
             </h2>
           </div>
           <p className="text-muted-foreground max-w-md">
-            Curated immersions for every traveller — from the curious first-timer to the dedicated
-            teacher seeking depth in the Himalayan tradition.
+            Siddharya is a pure retreat — no certifications, no teacher training. Just soulful daily
+            experiences crafted to slow you down and bring you home to yourself.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {programs.map((p) => (
             <article
               key={p.title}
               className="group relative overflow-hidden rounded-3xl bg-card border border-border hover:border-gold/60 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-1"
             >
-              <div className="aspect-[16/10] overflow-hidden">
+              <div className="aspect-[16/11] overflow-hidden">
                 <img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1200ms]" />
               </div>
-              <div className="p-7 lg:p-9">
+              <div className="p-7">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-3">
                     <div className="size-11 rounded-full bg-secondary flex items-center justify-center text-gold">
                       <p.icon className="size-5" />
                     </div>
-                    <div>
-                      <div className="text-xs uppercase tracking-widest text-muted-foreground">{p.duration}</div>
-                      <div className="text-sm text-primary font-medium">{p.price}</div>
-                    </div>
+                    <div className="text-xs uppercase tracking-widest text-muted-foreground">{p.duration}</div>
                   </div>
                   <ArrowUpRight className="text-primary opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
                 </div>
-                <h3 className="mt-5 font-serif text-2xl lg:text-3xl text-primary">{p.title}</h3>
-                <p className="mt-3 text-foreground/70 leading-relaxed">{p.description}</p>
+                <h3 className="mt-5 font-serif text-2xl text-primary">{p.title}</h3>
+                <p className="mt-3 text-foreground/70 leading-relaxed text-sm">{p.description}</p>
               </div>
             </article>
           ))}

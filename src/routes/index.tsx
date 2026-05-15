@@ -7,6 +7,7 @@ import { WhyChooseUs } from "@/components/site/WhyChooseUs";
 import { DailyTimeline } from "@/components/site/DailyTimeline";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Accommodation } from "@/components/site/Accommodation";
+import { NearbyAttractions } from "@/components/site/NearbyAttractions";
 import { Gallery } from "@/components/site/Gallery";
 import { FAQ } from "@/components/site/FAQ";
 import { BookingCTA } from "@/components/site/BookingCTA";
@@ -45,6 +46,7 @@ function Index() {
         <DailyTimeline />
         <Testimonials />
         <Accommodation />
+        <NearbyAttractions />
         <Gallery />
         <FAQ />
         <BookingCTA />
